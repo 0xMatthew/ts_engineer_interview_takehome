@@ -48,7 +48,7 @@ function get_query_result(which_btn) {
         county_name = data.features[i].attributes.CO_NAME;
         prop_val = data.features[i].attributes.SALE_VALUE;
 
-        //displaying values in using HTML (first query match)
+        //displaying values using HTML (first query match)
         document.getElementById("owner_query").innerHTML = owner;
         document.getElementById("full_address_query").innerHTML = full_address;
         document.getElementById("county_name_query").innerHTML = county_name;
