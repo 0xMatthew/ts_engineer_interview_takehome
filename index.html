@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<body>
+    <p>Enter County PIN to be queried using API:</p>
+    <input type="text" id="county_pin_input" placeholder="Enter a County PIN:">
+    <button type="button" onclick="get_query_result(0);">Query!</button>
+
+    <p>Enter Street Number (e.g. 1003, 2023, 321, etc.) to be queried using API:</p>
+    <input type="text" id="street_nbr_input" placeholder="Enter a Street Number:">
+    <button type="button" onclick="get_query_result(1);">Query!</button>
+
+    <p>Enter Street Name (e.g. 2nd, 10th, 72nd, etc.) to be queried using API:</p>
+    <input type="text" id="street_name_input" placeholder="Enter a Street Number:">
+    <button type="button" onclick="get_query_result(2);">Query!</button>
+
+    <script src="query.js"></script>
+
+    <p>The first owner from your query: <span id="owner_query"></span></p>
+    <p>The first full address from your query: <span id="full_address_query"></span></p>
+    <p>The first county name from your query: <span id="county_name_query"></span></p>
+    <p>The first estimated property value (in USD) from your query: <span id="property_value_query"></span></p>
+
+</body>
+
+</html>
